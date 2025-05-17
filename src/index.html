@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaporwave Persona</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="column left">
+    <div class="window">
+      <h1>HELLO, HUMAN</h1>
+      <p>I am [Your Name], a digital wanderer in code and aesthetics.</p>
+    </div>
+  </div>
+
+  <div class="column right">
+    <div class="window">
+      <h2>Menu</h2>
+      <button class="button" onclick="showModal('projectsModal')">See Projects</button>
+      <button class="button" onclick="showModal('linksModal')">Social Links</button>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Modal -->
+<div class="modal" id="projectsModal">
+  <div class="modal-content">
+    <span class="close" onclick="hideModal('projectsModal')">&times;</span>
+    <h3>My Projects</h3>
+    <ul>
+      <li><a href="https://example.com/project1" target="_blank">Project One</a></li>
+      <li><a href="https://example.com/project2" target="_blank">Project Two</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Social Links Modal -->
+<div class="modal" id="linksModal">
+  <div class="modal-content">
+    <span class="close" onclick="hideModal('linksModal')">&times;</span>
+    <h3>Connect With Me</h3>
+    <ul>
+      <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
+      <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
