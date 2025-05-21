@@ -17,10 +17,23 @@
   <div class="column right">
     <div class="window">
       <h2>Menu</h2>
-      <button class="button" onclick="showModal('projectsModal')">See Projects</button>
-      <button class="button" onclick="showModal('linksModal')">Social Links</button>
+      <button class="button" onclick="showModal('projectsModal')">Past Projects</button>
+      <button class="button" onclick="showModal('skillsModal')">Relevant Skills</button>
+      <button class="button" onclick="showModal('educationModal')">Education</button>
+    </div>
+
+    <div class="window">
+      <h2>Socail Media</h2>
+      <ul>
+        <li><a href="https://github.com/AlexTe32" target="_blank">GitHub</a></li>
+        <li><a href="https://discordapp.com/users/1025110674399043605" target="_blank">Discord</a></li>
+        <li><a href="https://www.instagram.com/alex_te32?igsh=MXRva3J4Zzh2b3F3" target="_blank">Instagram</a></li>
+        <li><a href="mailto:trajcevskialeksandar861@gmail.com" target="_blank">Mail</a></li>
+      </ul>
     </div>
   </div>
+
+
 </div>
 
 <!-- Projects Modal -->
@@ -36,9 +49,20 @@
 </div>
 
 <!-- Social Links Modal -->
-<div class="modal" id="linksModal">
+<div class="modal" id="skillsModal">
   <div class="modal-content">
-    <span class="close" onclick="hideModal('linksModal')">&times;</span>
+    <span class="close" onclick="hideModal('skillsModal')">&times;</span>
+    <h3>Connect With Me</h3>
+    <ul>
+      <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
+      <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal" id="educationModal">
+  <div class="modal-content">
+    <span class="close" onclick="hideModal('educationModal')">&times;</span>
     <h3>Connect With Me</h3>
     <ul>
       <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
