@@ -13,7 +13,8 @@ body, html {
   max-height: 100%;
   overflow-x: hidden;
 }
-p{
+
+.left p{
   padding: 15px 30px 55px 15px;
 }
 
@@ -49,6 +50,10 @@ p{
   margin-bottom: 20px;
   max-height: 320px;
   overflow: hidden;
+}
+
+.right .window>a {
+  display: block;
 }
 
 .right .window li:last-of-type a, .right .window>a {
@@ -136,7 +141,7 @@ h4{
 }
 
 .modal-content ul ul{
-  padding-top: 0px;
+  padding-top: 0px !important;
   padding-left:35px;
   font-size: smaller;
 }
