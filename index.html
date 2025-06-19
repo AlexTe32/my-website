@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vaporwave Persona</title>
+  <title>Vaporwave Pers</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
   <div class="column left">
     <div class="window">
-      <h1>HELLO, HUMAN</h1>
-      <p>I am [Your Name], a digital wanderer in code and aesthetics.</p>
+      <h1>HELLO WORLD</h1>
+      <p>I've been passionate about computers and video games since
+        I was a child. That early interest made me curious about how
+        games and programs work, and it pushed me to start learning on my own.<br><br>
+        During my teenage years, I taught myself Python, focusing on
+        basic programming concepts, game development, and small automation
+        projects. Coding quickly became one of my favorite ways to be creative and solve problems.<br><br>
+        My passion for technology guided my education. I chose to study at the
+        Regional Center for Vocational Education and Training “Moša Pijade” in Tetovo,
+        North Macedonia, where I completed my secondary education as an Electrical Technician for Computer
+        Technology and Automation.<br><br>
+        Currently, I’m pursuing a degree in Software Engineering at the Faculty of Computer Science and
+        Engineering in Skopje. In my free time, I enjoy joining game jams and working on side projects that
+        help me improve my skills and explore new ideas.</p>
     </div>
   </div>
 
   <div class="column right">
     <div class="window">
       <h2>Menu</h2>
-      <button class="button" onclick="showModal('projectsModal')">Past Projects</button>
+      <button class="button" onclick="showModal('projectsModal')">My Projects</button>
       <button class="button" onclick="showModal('skillsModal')">Relevant Skills</button>
       <button class="button" onclick="showModal('educationModal')">Education</button>
+      <a href="Александар%20Трајчевски.pdf" target="_blank">Resume</a>
     </div>
 
     <div class="window">
@@ -41,28 +54,84 @@
     <span class="close" onclick="hideModal('projectsModal')">&times;</span>
     <h3>My Projects</h3>
     <ul>
-      <li><a href="https://example.com/project1" target="_blank">Project One</a></li>
-      <li><a href="https://example.com/project2" target="_blank">Project Two</a></li>
+      <li><a href="https://github.com/AlexTe32/Cat-Mouse" target="_blank">Game Jam Finder</a>
+        <br>
+        <p>Developed a Discord bot in Python that scrapes and shares information about
+          upcoming Game Jams. Users can request Game Jam listings on command or set the bot
+          to automatically post updates weekly in a specified channel.</p>
+      </li>
+      <li><a href="https://github.com/AlexTe32/Cat-Mouse" target="_blank">Cat&Mouse</a>
+        <br>
+        <p>Developed a simple Python simulation as a university project to estimate how long
+          it would take 3 cats to catch 100 mice, given they catch 3 mice in 3 minutes</p>
+      </li>
+      <li><a href="https://alexte32.github.io/Mravka/" target="_blank">Langton's Ant</a>
+      <br>
+        <p>Built a Langton's Ant simulation in JavaScript, showcasing emergent
+          behavior from simple rules using HTML5 Canvas.</p>
+      </li>
+
+
     </ul>
 </div>
 
 <!-- Social Links Modal -->
 <div class="modal-content" id="skillsModal">
     <span class="close" onclick="hideModal('skillsModal')">&times;</span>
-    <h3>Connect With Me</h3>
+    <h3>Relevant Skills</h3>
     <ul>
-      <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+      <li>
+        Programming Languages
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+        </ul>
+      </li>
+
+      <li>
+        Tools & Technologies
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Pygame</li>
+          <li>BeautifulSoup</li>
+          <li>Flask</li>
+        </ul>
+      </li>
+
+      <li>
+        Data & Analysis
+        <ul>
+          <li>Excel/Google Sheets</li>
+          <li>Pandas/Matplotlib</li>
+          <li>SQL</li>
+        </ul>
+      </li>
     </ul>
 </div>
 
 <div class="modal-content" id="educationModal">
     <span class="close" onclick="hideModal('educationModal')">&times;</span>
-    <h3>Connect With Me</h3>
-    <ul>
-      <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
-    </ul>
+    <h3>Education</h3>
+    <h4>Higher Education</h4>
+    <p>Faculty of Computer Science and Engineering (FINKI) – Skopje, North Macedonia<br>
+      Program: Bachelor of Software Engineering<br>
+      Currently pursuing a degree in Software Engineering at the Faculty of Computer
+      Science and Engineering (FINKI), with coursework focused on programming, data structures,
+      algorithms, software design, and system development.
+    </p>
+
+    <h4>Secondary Education</h4>
+    <p>Regional Center for Vocational Education and Training “Moša Pijade” – Tetovo, North Macedonia<br>
+      Program: Electrical Technician for Computer Technology and Automation<br>
+      Completed a four-year vocational secondary education program with a strong
+      focus on electrical engineering, electronics, automation, and computer systems.
+      The curriculum included over 400 hours of hands-on practical training and more than
+      500 hours of computer-based instruction in specialized labs. Gained experience in maintaining
+      computer systems, programming, working with microcontrollers, and developing automation solutions
+      used in industrial processes.</p>
+
 </div>
 
 <script src="script.js"></script>
